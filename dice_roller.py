@@ -8,14 +8,20 @@ import random
 
 def roll_d2():
     d2_outcome = random.randint(1, 2)
-    # xd2 = int(d2_quantity.get())
-    d2_result.config(text=d2_outcome)
+    d2list = []
+    xd2 = int(d2_quantity.get())
+    for i in range(int(xd2)):
+        d2list.append(d2_outcome)
+    d2_result.config(text=sum(d2list))
 
 
 def roll_d4():
     d4_outcome = random.randint(1, 4)
-    # xd4 = int(d4_quantity.get())
-    d4_result.config(text=d4_outcome)
+    d4list = []
+    xd4 = int(d4_quantity.get())
+    for i in range(int(xd4)):
+        d4list.append(d4_outcome)
+    d4_result.config(text=sum(d4list))
 
 
 def roll_d6():
