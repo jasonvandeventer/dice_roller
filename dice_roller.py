@@ -60,7 +60,7 @@ def roll_dperc():
     xdperc = int(dperc_quantity.get())
     dperclist = []
     for i in range(int(xdperc)):
-        dperc_outcome = random.randrange(0, 101, 10)
+        dperc_outcome = random.randrange(10, 101, 10)
         dperclist.append(dperc_outcome)
     dperc_result.config(text=sum(dperclist))
     all_rolls.config(text=(', '.join(map(str, dperclist))))
